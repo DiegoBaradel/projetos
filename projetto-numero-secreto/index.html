@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/estilo/estilo.css">
+    <link rel="stylesheet" href="src/estilo/responsivo.css">
+    <link rel="stylesheet" href="./src/estilo/reset.css">
+    <title>Número Secreto</title>
+</head>
+<body>
+    <header id="cabeca" class="cabeca">
+        <h2 class="texto-formatado">Senha Secreta</h2>
+    </header>
+
+    <main id="conteiner" class="conteiner">
+
+        <section id="saida-dado" class="borda saida-dado">
+            <div id="div-saida-dado" class="display-none div-saida-dado">
+                <h2 id="titulo-saida-dado" class="titulo-saida-dado">Adivinhe o Número</h2>
+                <p id="numero-aleatorio" class="texto-formatado numero-aleatorio">????</p>
+            </div>
+            <button id="iniciar" class="botao">Start</button>
+        </section>
+
+        <section id="historico-tentativa" class="borda historico-tentativa">
+            <h2 class="texto-formatado">
+                Histórico
+            </h2>
+            <table>
+                <thead>
+                    <th>Nº1</th>
+                    <th>Nº2</th>
+                    <th>Nº3</th>
+                    <th>Nº4</th>
+                </thead>
+                <tbody id="tabela">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id="entrada-dado" class="borda entrada-dado">
+            <h2 class="texto-formatado">
+                Digite um número
+            </h2>
+            <div id="senha" class="senha">
+                <div class="numero-senha">
+                    <button class="botao-numero-senha somar"><img src="./src/imagens/seta-up.svg" alt="imagem seta-up"></button>
+                    <input
+                        type="number"
+                        name="numero01"
+                        id="numero01"
+                        class="numero-secreto"
+                        placeholder="0"
+                        readonly
+                        value="0">
+                    <button class="botao-numero-senha subtrair"><img src="./src/imagens/seta-down.svg" alt="imagem seta-down"></button>
+                </div>
+                <div class="numero-senha">
+                    <button class="botao-numero-senha somar"><img src="./src/imagens/seta-up.svg" alt="imagem seta-up"></button>
+                    <input
+                        type="number"
+                        name="numero02"
+                        id="numero02"
+                        class="numero-secreto"
+                        placeholder="0"
+                        readonly
+                        value="0">
+                    <button class="botao-numero-senha subtrair"><img src="./src/imagens/seta-down.svg" alt="imagem seta-down"></button>
+                </div>
+                <div class="numero-senha">
+                    <button class="botao-numero-senha somar"><img src="./src/imagens/seta-up.svg" alt="imagem seta-up"></button>
+                    <input
+                        type="number"
+                        name="numero03"
+                        id="numero03"
+                        class="numero-secreto"
+                        placeholder="0"
+                        readonly
+                        value="0">
+                    <button class="botao-numero-senha subtrair"><img src="./src/imagens/seta-down.svg" alt="imagem seta-down"></button>
+                </div>
+                <div class="numero-senha">
+                    <button class="botao-numero-senha somar"><img src="./src/imagens/seta-up.svg" alt="imagem seta-up"></button>
+                    <input
+                        type="number"
+                        name="numero04"
+                        id="numero04"
+                        class="numero-secreto"
+                        placeholder="0"
+                        readonly
+                        value="0">
+                    <button class="botao-numero-senha subtrair"><img src="./src/imagens/seta-down.svg" alt="imagem seta-down"></button>
+                </div>
+            </div>
+            <button id="verificar-numero" class="botao">Verificar Número</button>
+        </section>
+
+        <section id="contador-tentativa" class="borda contador-tentativa">
+            <h2 class="texto-formatado">Tentativas restantes</h2>
+            <div id="tentativas-restantes" class="tentativas-restantes"></div>
+        </section>
+    </main>
+    <section id="regras" class="regras">
+        <div>
+            <h2 class="texto-formatado">
+                REGRAS
+            </h2>
+            <p class="texto-paragrafo">
+                O jogo cria uma combinação
+                (senha) de quatro numeros entre os dez numeros do jogo , obedecendo às seguintes regras:
+                Os numeros vão de (0 à 9) e os numeros NÃO podem se repetir.
+            </p>
+            <p class="texto-paragrafo">
+                O jogador tentará descobrir qual a senha que o jogo
+                montou. Para isso, deverá proceder da seguinte forma: o
+                Jogador deverá “chutar” uma senha (combinação de quatro numeros) e
+                colocar nas 4 primeiras casas e clicar em “Tentativa”.
+            </p>
+            <p class="texto-paragrafo">
+                O jogo vai analise a senha e mandara a mensagem de quantos numeros, da tentativa, cor preta para numeros que existem e estão na posição certa, cor branca para numeros que existem mas não estão na posição certa e transparente para numeros que não existem.
+            </p>
+            <p class="texto-paragrafo">
+                O Jogador poderá fazer 8 “tentativas”.
+            </p>
+        </div>
+        <button id="botao-seta" class="botao-seta">
+            <img id="imagem-seta" src="/src/imagens/seta-direita.svg" alt="imagem de sete esquerda">
+        </button>
+    </section>
+
+    <script src="src/java-script/verificador.js"></script>
+</body>
+</html>
