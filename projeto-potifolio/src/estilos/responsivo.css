@@ -1,141 +1,78 @@
-@media (orientation: landscape) {
-    #fundo{
-    background-image: url(../imagens/fundo-grande.jpg);
-    }    
+@media (max-width:1200px) {
+    .secao .cabecalio{
+        width: calc(100% - 20px);
+    }
+    .secao .div-secao-apresentacao{
+        width: calc(100% - 20px);
+    }
 }
-
-@media (orientation: portrait) {
-    #fundo{
-        background-image: url(../imagens/fundo-pequena.jpg);
+@media (max-width:890px) {
+    .secao .cabecalio .titulo{
+        font-size: 1.5em;
+    }
+    .secao .div-secao-apresentacao .div-apresentacao .texto-apresentacao{
+        min-width: 300px;
+        font-size: 1.3em;
+    }
+    .secao .div-secao-apresentacao .div-sobre-min .texto-sobre-min{
+        max-width: 300px;
+        min-height: 200px;
+        font-size: 1em;
+    }
+    .secao .div-secao-apresentacao .div-links img{
+        width: 80px;
+    }
+    .apresentacao.secao::after{
+        background-image: none;
+    }
+    .secao .cabecalio .botao img{
+        width: 80%;
     }
 }
 
-@media (max-width: 1060px) {
-    section#inicio p.apresentacao{
-        font-size: 1.2em;
-     }
-     section#inicio h2{
-        font-size: 1.8em;
-     }
-     section#inicio img#logo{
-        width: 250px;
-     }
+@media (max-width:630px){
+    .secao .div-secao-apresentacao{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        min-height: calc(100svh - 80px);
+    }
+    .secao .div-secao-apresentacao .div-apresentacao{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .secao .div-secao-apresentacao .div-sobre-min{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .secao .div-secao-apresentacao .div-links{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
 
-@media (max-width: 960px) {
-
-   nav#menu{
-      position: relative;
-      top: 0px;
-      right: -10px;
-      align-self: flex-start;
-      height: auto;
-      display: none;
-      background-color: rgba(0, 0, 0, 0.884);
-      z-index: 9;
-   }
-   nav ul{
-      height: 40svh;
-      padding: 40px 25px;
-   }
-   nav li{
-      width: 200px;
-      display: block;
-      margin: 20px;
-   }
-   img#icone-menu{
-      display: block;
-      position: absolute;
-      top: 15px;
-      right: 5px;
-      z-index: 10;
-   }
-
-   section#inicio div#conteiner{
-      flex-direction: column;
-   }
-    
-   @keyframes cima-baixo{
-      0%{
-         transform: translatex(0px);
-      }
-      25%{
-         transform: translatex(-20px);
-      }
-      50%{
-         transform: translatex(0px);
-      }
-      75%{
-         transform: translatex(20px);
-      }
-      100%{
-         transform: translatex(0px);
-      }
-   }
-}
-
-@media (max-width: 470px) {
-   
-   .escopo-secoes{
-      width: 95%;
-   }
-   .texto{
-      font-size: 1em;
-      text-indent: 0.8em;  
-      line-height: 1.5em;
-   }
-   h2.segundo-titulo{
-      font-size: 1.3em;
-   }
-   .imagem-tecnologias{
-      width: 100px;
-   }
-   div.introducao h2{
-      font-size: 1.5em;
-   }
-   div.introducao p{
-      font-size: 1em;
-   }
-}
-
-@media (max-height: 768px) and (orientation: landscape){
-   #fundo, #fundo::after{
-      height: 768px;
-   }
-   section#inicio{
-      height: 768px;
-   }
-}
-
-@media (max-width: 400px) {
-
-   section#inicio div{
-      width: 250px;
-   }
-   section#inicio p.apresentacao{
-      font-size: 1em;
-   }
-   section#inicio h2{
-      font-size: 1.4em;
-   }
-   section#inicio img#logo{
-      width: 150px;
-   }
-   .texto{
-      font-size: 0.9em;
-      text-indent: 0.5em;  
-      line-height: 1.7em;
-   }
-   .imagem-tecnologias{
-      width: 80px;
-   }
-   div.janela-projeto{
-      position: relative;
-      overflow: hidden;
-      min-width: 200px;
-      height: 150px;
-      flex-grow: 1;
-      border-radius: 10px;
-      box-shadow: 5px 5px 20px black;
-   }
+@media (max-width:320px) {
+    .secao .cabecalio .titulo{
+        font-size: 1.3em;
+    }
+    .secao .div-secao-apresentacao .div-apresentacao .texto-apresentacao{
+        min-width: 200px;
+        font-size: 1em;
+    }
+    .secao .div-secao-apresentacao .div-sobre-min .texto-sobre-min{
+        max-width: 200px;
+        min-height: 150px;
+        font-size: 0.8em;
+    }
+    .secao .div-secao-apresentacao .div-links img{
+        width: 50px;
+    }
+    .secao .cabecalio .botao img{
+        width: 50%;
+    }
 }

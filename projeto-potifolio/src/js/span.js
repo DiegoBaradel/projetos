@@ -1,6 +1,6 @@
 var data = new Date()
 var hora = data.getHours()
-const texto = document.getElementById('texto-educado')
+const texto = document.querySelector('#texto-boas-vindas')
 
 if(hora >= 0 && hora < 6){
     texto.innerHTML = 'Boa madrugada'

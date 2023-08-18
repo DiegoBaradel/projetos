@@ -1,26 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    border: none;
 }
-
 a{
+    font-weight: bolder;
     text-decoration: none;
-    color: #000000;
-}
-
-li{
-    list-style-type: none;
+    color: #000;
 }
 abbr{
-    text-decoration: underline;
-    font-weight: bolder;
-    color: #763857;
-    cursor: pointer;
-}
-.escopo{
-    max-width: 1600px;
-    margin: auto;
+    text-decoration: none;
 }

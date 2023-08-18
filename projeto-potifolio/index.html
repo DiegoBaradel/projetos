@@ -13,173 +13,105 @@
     <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
     <title>Portfólio - Diego S. Baradel</title>
 </head>
-<body onresize="tamanho()">
-    <div id="fundo">
-    </div>
-    <header class="escopo">
-        <div>
-            <h1>Portfólio</h1>
-        </div>
-        <img id="icone-menu" src="src/imagens/menu.svg" alt="icone de menu">
-        <nav id="menu">
-            <ul id="menu-navegar">
-                <a href="#fundo">
-                    <li>Inicio</li>
-                </a>
-                <a href="#sobre">
-                    <li>Sobre</li>
-                </a>
-                <a href="#projeto">
-                    <li>Projetos</li>
-                </a>
-                <a href="#referencia">
-                    <li>Referência</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="escopo">
-        <section class="escopo-secoes" id="inicio">
-            <div id="conteiner">
-                <div>
-                    <p class="apresentacao"><span id="texto-educado"></span>, eu me chamo</p>
-                    <h2>Diego S. Baradel</h2>
-                    <p class="apresentacao">Seja bem-vindo ao meu</p>
-                    <H2>Portfólio.</H2>
+<body>
+    <main id="conteiner" class="conteiner">
+
+        <section id="apresentacao" class="apresentacao secao">
+
+            <header id="cabecalio" class="cabecalio">
+                <h1 id="titulo-cabecalio" class="titulo">Portfólio</h1>
+                <button id="btn-tema" class="botao"><img id="botao-tema" src="./src/imagens/tema-escuro.png" alt="imagem de tema claro"></button>
+            </header>
+
+            <div id="div-secao-apresentacao" class="div-secao-apresentacao">
+                <div id="div-apresentacao" class="div-apresentacao">
+                    <div class="texto-apresentacao">
+                        <div>
+                            <p><span id="texto-boas-vindas"></span>, eu me chamo</p>
+                            <h2>Diego S. Baradel.</h2>
+                        </div>
+                        <div>
+                            <p>Seja bem-vindo ao meu</p>
+                            <h2>Portfólio.</h2>
+                        </div>
+                    </div>
                 </div>
-                <img id="logo" class="animacao-cima-baixo" src="src/imagens/logo.png" alt="imagem logo">
-            </div>
-
-            <a href="src/curriculo/curriculo.pdf" download="curriculo.pdf" type="application/pdf">
-                <div id="botao-curriculo">
-                    <p>Curriculo</p>
-                    <img src="src/imagens/download.svg" alt="imagem de download">
+                <div id="div-sobre-min" class="div-sobre-min">
+                    <div class="texto-sobre-min">
+                        <div>
+                            <p>
+                                Estou buscando meu primeiro emprego na de web desing, sou baicharel em Ciências da Computação na <a href="https://www.uscs.edu.br" target="_blank"><abbr title="Universidade de São Caetano do Sul">USCS</abbr></a>.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Este portfólio visa o objetivo mostrar os meus conhecimentos em <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>Java Script</strong>, além de ser uma janela para mostrar os meus projetos.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </a>
-        </section>
-
-
-        <section class="escopo-secoes" id="sobre">
-            <div class="texto">
-                <h2 class="segundo-titulo">
-                    Um pouco sobre mim
-                </h2>
-                <p>
-                    Oi eu me chamo Diego da Silva Baradel e estou buscando meu primeiro emprego, tenho ensino superior completo em Ciências da Computação na <a href="https://www.uscs.edu.br" target="_blank"><abbr title="Universidade de São Caetano do Sul">USCS</abbr></a>.
-                </p>
-                <p>
-                    No início do ano de 2023 eu comecei a estudar desenvolvimento WEB e estou procurando uma vaga como desenvolvedor júnior. Quero desenvolver minhas habilidades e também contribuir para o sucesso da empresa.
-                </p>
-                <p>
-                    Este portfólio visa o objetivo mostrar os meus conhecimentos em <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>Java Script</strong>, além de ser uma janela para mostrar os meus projetos.
-                </p>
-                <p>
-                    Para mais detalhes sobre mim, acesse o meu <a href="https://www.linkedin.com/in/diego-baradel-b645521a6/" target="_blank"><strong>LinkedIn</strong></a> e <a href="https://github.com/DiegoBaradel" target="_blank"><strong>Github</strong></a>.
-                </p>
+                <div id="div-links" class="div-links">
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/diego-baradel-b645521a6/" target="_blank">
+                            <img id="logo-linkedin" src="./src/imagens/linkedin-in.png" alt="logo do linkedin">
+                        </a>
+                        <a href="https://github.com/DiegoBaradel" target="_blank">
+                            <img id="logo-github" src="./src/imagens/github.png" alt="logo do github">
+                        </a>
+                        
+                        <a href="src/curriculo/curriculo.pdf" download="curriculo.pdf" type="application/pdf">
+                            <img id="logo-download" src="src/imagens/download.png" alt="imagem de download">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div  id="logo-imagens">
-                <a href="https://www.linkedin.com/in/diego-baradel-b645521a6/" target="_blank"><img class="imagem-tecnologias" id="imagem-linkedin" src="src/imagens/linkedin-in.png" alt="Logo do linkedin"></a>
-                <a href="https://github.com/DiegoBaradel" target="_blank"><img class="imagem-tecnologias" id="imagem-github" src="src/imagens/github.png" alt="Logo do github"></a>
-            </div>
+
         </section>
         
+        <!-- <section id="projetos-pessoais" class="secao">
 
-        <section class="escopo-secoes" id="projeto">
-            <div class="texto">
-                <h2 class="segundo-titulo">
-                    Meus projetos pessoais
-                </h2>
+            <h2 class="titulo">
+                Projetos Pessoais
+            </h2>
+
+            <div>
+                <div class="div-projetos-pessoais">
+                    <img src="./src/imagens/projeto-generico.jpg" alt="teste">
+                    <p>teste</p>
+                </div>
+                <div class="div-projetos-pessoais">
+                    <img src="./src/imagens/projeto-generico.jpg" alt="teste">
+                    <p>teste</p>
+                </div>
             </div>
-           <div id="secao-projeto">
 
-               <div class="janela-projeto">
-                    <img class="imagem-generica" src="src/imagens/projeto-generico.jpg" alt="imagem de obras">
-                    <div class="introducao">
-                        <h2>Projeto em desenvolvimento</h2>
-                        <p>
-                            Esse banner está simulando um projeto pronto, com o proposito de demonstrar os efeitos CSS3 e a estrutura HTML5.
-                        </p>
-                    </div>
-               </div>
-
-               <div class="janela-projeto">
-                <img class="imagem-generica" src="src/imagens/projeto-generico.jpg" alt="imagem de obras">
-                <div class="introducao">
-                    <h2>Projeto em desenvolvimento</h2>
-                    <p>
-                        Esse banner está simulando um projeto pronto, com o proposito de demonstrar os efeitos CSS3 e a estrutura HTML5.
-                    </p>
-                </div>
-               </div>
-
-               <div class="janela-projeto">
-                <img class="imagem-generica" src="src/imagens/projeto-generico.jpg" alt="imagem de obras">
-                <div class="introducao">
-                    <h2>Projeto em desenvolvimento</h2>
-                    <p>
-                        Esse banner está simulando um projeto pronto, com o proposito de demonstrar os efeitos CSS3 e a estrutura HTML5.
-                    </p>
-                </div>
-               </div>
-
-               <div class="janela-projeto">
-                <img class="imagem-generica" src="src/imagens/projeto-generico.jpg" alt="imagem de obras">
-                <div class="introducao">
-                    <h2>Projeto em desenvolvimento</h2>
-                    <p>
-                        Esse banner está simulando um projeto pronto, com o proposito de demonstrar os efeitos CSS3 e a estrutura HTML5.
-                    </p>
-                </div>
-               </div>
-
-               <div class="janela-projeto">
-                <img class="imagem-generica" src="src/imagens/projeto-generico.jpg" alt="imagem de obras">
-                <div class="introducao">
-                    <h2>Projeto em desenvolvimento</h2>
-                    <p>
-                        Esse banner está simulando um projeto pronto, com o proposito de demonstrar os efeitos CSS3 e a estrutura HTML5.
-                    </p>
-                </div>
-               </div>
-
-               <div class="janela-projeto">
-                <img class="imagem-generica" src="src/imagens/projeto-generico.jpg" alt="imagem de obras">
-                <div class="introducao">
-                    <h2>Projeto em desenvolvimento</h2>
-                    <p>
-                        Esse banner está simulando um projeto pronto, com o proposito de demonstrar os efeitos CSS3 e a estrutura HTML5.
-                    </p>
-                </div>
-               </div>
-
-           </div>
         </section>
+        
+        <section id="projetos-eventos" class="secao">
 
+            <div id="slide" class="slide">
 
+                <h2 class="titulo">
+                    Projetos de Eventos
+                </h2>
 
-    </main>
+                <div id="div-imagem-slide" class="div-imagem-slide">
+                    <img class="imagem-slide" src="./src/imagens/projeto-generico.jpg" alt="teste">
+                    <img class="imagem-slide" src="./src/imagens/projeto-generico.jpg" alt="teste">
+                </div>
 
-    <footer id="referencia" class="escopo">
-        <div class="escopo-secoes">
-            <div class="texto">
-
-            <aside>
-                <h2 class="texto segundo-titulo">Referências e Agradecimentos</h2>
-                <ul id="lista-referencia">
-                    <li>As imagens utilizadas neste site foram retiradas do site <a href="https://www.pexels.com/pt-br/" target="_blank"><strong>Pexels</strong></a>.</li>
-                    <li>Os ícones e as fontes foram retiradas respectivamente do <a href="https://fonts.google.com/icons" target="_blank"><strong>Google Icons</strong></a> e do <a href="https://fonts.google.com" target="_blank"><strong>Google Fonts</strong></a>.</li>
-                    <li>Os guias online, <a href="https://developer.mozilla.org/pt-BR/" target="_blank"><strong>Mozilla Developer Network</strong></a> e o site <a href="https://www.w3schools.com" target="_blank"><strong>W3Schools</strong></a>, foram utilizados como referência para a criação do site.</li>
-                    <li>As cores uzadas, foram escolhidas atraves do site <a href="https://colorhunt.co" target="_blank"><strong>colorhunt</strong></a> e da ferramenta gratuita <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank"><strong>Adobe Color</strong></a>.</li>
-                    <li>Um agradecimento especial para <strong>Kelly Binotti</strong>, pela criação do logo desse site.</li>
-                    
-                </ul>
-            </aside>
+                <div id="div-botao-slide">
+                    <button class="botao-slide"></button>
+                    <button class="botao-slide"></button>
+                </div>
 
             </div>
-        </div>
-    </footer>
-    <script src="src/js/Menu.js"></script>
+
+        </section> -->
+    </main>
+</body>
+    <script src="src/js/index.js"></script>
     <script src="src/js/span.js"></script>
 </body>
 </html>
