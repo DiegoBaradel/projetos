@@ -155,9 +155,9 @@ botaoRegras.addEventListener('click',(evt)=>{
     const regras = document.querySelector('#regras')
     regras.classList.toggle('ativo')
     if(regras.classList.contains('ativo')){
-        document.querySelector('#imagem-seta').setAttribute('src','/src/imagens/seta-esquerda.svg')
+        document.querySelector('#imagem-seta').setAttribute('src','./src/imagens/seta-esquerda.svg')
     }
     else{
-        document.querySelector('#imagem-seta').setAttribute('src','/src/imagens/seta-direita.svg')
+        document.querySelector('#imagem-seta').setAttribute('src','./src/imagens/seta-direita.svg')
     }
 })

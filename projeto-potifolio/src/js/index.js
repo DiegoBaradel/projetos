@@ -1,4 +1,5 @@
 const botaoTema = document.querySelector('#btn-tema')
+const botaoSlide = [...document.querySelectorAll('.botao-slide')]
 
 botaoTema.addEventListener('click',(evt)=>{
     const corpo = document.querySelector('body')
@@ -16,4 +17,18 @@ botaoTema.addEventListener('click',(evt)=>{
         document.querySelector('#logo-github').setAttribute('src','./src/imagens/github.png')
         document.querySelector('#logo-download').setAttribute('src','src/imagens/download.png')
     }
+})
+
+botaoSlide.forEach((botao,index)=>{
+    botao.addEventListener('click',(evt)=>{
+
+        botaoSlide.forEach(removerClass=>{
+            removerClass.classList.remove('botao-ativo')
+        })
+        evt.target.classList.add('botao-ativo')
+        
+        const largura = document.querySelector('#slide-projetos-eventos').clientWidth
+
+        document.querySelector('#imagem-slide').style.left = `-${largura*index}px`
+    })
 })

@@ -1,54 +1,54 @@
 @media (max-width:1200px) {
-    .secao .cabecalio{
+    .apresentacao .cabecalio{
         width: calc(100% - 20px);
     }
-    .secao .div-secao-apresentacao{
+    .apresentacao .div-secao-apresentacao{
         width: calc(100% - 20px);
     }
 }
 @media (max-width:890px) {
-    .secao .cabecalio .titulo{
+    .apresentacao .cabecalio .titulo{
         font-size: 1.5em;
     }
-    .secao .div-secao-apresentacao .div-apresentacao .texto-apresentacao{
+    .apresentacao .div-secao-apresentacao .div-apresentacao .texto-apresentacao{
         min-width: 300px;
         font-size: 1.3em;
     }
-    .secao .div-secao-apresentacao .div-sobre-min .texto-sobre-min{
+    .apresentacao .div-secao-apresentacao .div-sobre-min .texto-sobre-min{
         max-width: 300px;
         min-height: 200px;
         font-size: 1em;
     }
-    .secao .div-secao-apresentacao .div-links img{
+    .apresentacao .div-secao-apresentacao .div-links img{
         width: 80px;
     }
-    .apresentacao.secao::after{
+    .apresentacao::after{
         background-image: none;
     }
-    .secao .cabecalio .botao img{
+    .apresentacao .cabecalio .botao img{
         width: 80%;
     }
 }
 
 @media (max-width:630px){
-    .secao .div-secao-apresentacao{
+    .apresentacao .div-secao-apresentacao{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         min-height: calc(100svh - 80px);
     }
-    .secao .div-secao-apresentacao .div-apresentacao{
+    .apresentacao .div-secao-apresentacao .div-apresentacao{
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    .secao .div-secao-apresentacao .div-sobre-min{
+    .apresentacao .div-secao-apresentacao .div-sobre-min{
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    .secao .div-secao-apresentacao .div-links{
+    .apresentacao .div-secao-apresentacao .div-links{
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 1;
@@ -57,22 +57,22 @@
 }
 
 @media (max-width:320px) {
-    .secao .cabecalio .titulo{
+    .apresentacao .cabecalio .titulo{
         font-size: 1.3em;
     }
-    .secao .div-secao-apresentacao .div-apresentacao .texto-apresentacao{
+    .apresentacao .div-secao-apresentacao .div-apresentacao .texto-apresentacao{
         min-width: 200px;
         font-size: 1em;
     }
-    .secao .div-secao-apresentacao .div-sobre-min .texto-sobre-min{
+    .apresentacao .div-secao-apresentacao .div-sobre-min .texto-sobre-min{
         max-width: 200px;
         min-height: 150px;
         font-size: 0.8em;
     }
-    .secao .div-secao-apresentacao .div-links img{
+    .apresentacao .div-secao-apresentacao .div-links img{
         width: 50px;
     }
-    .secao .cabecalio .botao img{
+    .apresentacao .cabecalio .botao img{
         width: 50%;
     }
 }
