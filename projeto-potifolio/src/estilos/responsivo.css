@@ -37,8 +37,8 @@
     .apresentacao .div-secao-apresentacao .div-links img{
         width: 80px;
     }
-    .apresentacao::after{
-        background-image: none;
+    .div-imagem-fundo-apresentacao img{
+        display: none;
     }
     .apresentacao .cabecalio .botao img{
         width: 80%;

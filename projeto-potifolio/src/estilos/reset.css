@@ -1,8 +1,13 @@
+@font-face {
+    font-family: poppins;
+    src: url(../fontes/Poppins-Medium.ttf);
+ }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
+    font-family: poppins;
 }
 a{
     font-weight: bolder;
