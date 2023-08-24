@@ -290,7 +290,7 @@
    transition: left 0.5s;
 }
 .projetos-eventos .slide-projetos-eventos .imagem-slide .site-evento{
-   width: 100%;
+   width: 1200px;
    object-fit: cover;
 }
 .projetos-eventos .slide-projetos-eventos .div-botao-slide{

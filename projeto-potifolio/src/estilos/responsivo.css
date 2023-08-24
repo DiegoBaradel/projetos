@@ -47,6 +47,9 @@
         width: 600px;
         height: 300px;
     }
+    .projetos-eventos .slide-projetos-eventos .imagem-slide .site-evento{
+        width: 600px;
+    }
     .projetos-eventos .slide-projetos-eventos .imagem-slide{
         width: 600px;
     }
@@ -83,11 +86,14 @@
         width: 300px;
         height: 150px;
     }
+    .projetos-eventos .slide-projetos-eventos .imagem-slide .site-evento{
+        width: 300px;
+    }
     .projetos-eventos .slide-projetos-eventos .imagem-slide{
         width: 300px;
     }
     .projetos-eventos .slide-projetos-eventos .div-botao-slide .botao-slide{
-        width: 15px;
+        width: 30px;
         height: 15px;
     }
 }
@@ -118,11 +124,14 @@
         width: 200px;
         height: 100px;
     }
+    .projetos-eventos .slide-projetos-eventos .imagem-slide .site-evento{
+        width: 200px;
+    }
     .projetos-eventos .slide-projetos-eventos .imagem-slide{
         width: 200px;
     }
     .projetos-eventos .slide-projetos-eventos .div-botao-slide .botao-slide{
-        width: 10px;
+        width: 20px;
         height: 10px;
     }
 }
