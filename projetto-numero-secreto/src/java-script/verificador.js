@@ -147,7 +147,6 @@ botaoVerificar.addEventListener('click', (evt)=>{
     numeroSecretoUsuario.forEach(campo=>{
         campo.value='0'
     })
-    numeroSecretoUsuario[0].focus()
     mostrarVidas(vidas)
 })
 
