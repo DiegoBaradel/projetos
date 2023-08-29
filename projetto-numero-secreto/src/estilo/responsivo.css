@@ -77,8 +77,20 @@
         }
     }
 }
-
-/* 
-320px — 480px: dispositivos móveis.
-481px — 768px: iPads, tablets.
-769px — 1024px: telas pequenas, laptops. */
+@media (max-height: 520px){
+    .conteiner{
+        grid-template-rows: 150px 180px;
+        margin-top: 55px;
+        min-height: auto;
+    }
+    .senha{
+        height: 80px;
+    }
+    .numero-secreto{
+        font-size: 1em;
+    }
+    .entrada-dado .botao{
+        font-size: 0.8em;
+        width: 60%;
+    }
+}

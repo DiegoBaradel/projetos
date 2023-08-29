@@ -48,3 +48,21 @@
         height: 30px;
     }
 }
+
+@media (max-height:480px) {
+    .titulo-da-imagem{
+        margin-top: 15px;
+        font-size: 1em;
+    }
+    .descricao{
+        font-size: 0.6em;
+    }
+    .secao-menu{
+        height: 50px;
+    }
+    .icone{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
