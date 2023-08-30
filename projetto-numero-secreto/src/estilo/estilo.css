@@ -9,6 +9,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .cabeca{
     position: absolute;
@@ -166,9 +167,10 @@ table, th, td{
     gap: 5px;
     position: absolute;
     top: 0;
-    left: -375px;
+    left: -275px;
     border-radius: 0px 5px 5px 0px;
-    width: 400px;
+    width: 300px;
+    max-width: 100%;
     height: 100%;
     padding-left: 10px;
     color: #000;

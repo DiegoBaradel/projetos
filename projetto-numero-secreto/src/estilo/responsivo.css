@@ -78,19 +78,27 @@
     }
 }
 @media (max-height: 520px){
+    .cabeca{
+        display: none;
+    }
     .conteiner{
-        grid-template-rows: 150px 180px;
-        margin-top: 55px;
+        grid-template-rows: 100px 170px;
         min-height: auto;
     }
+    .titulo-saida-dado{
+        font-size: 1em;
+    }
+    .saida-dado .texto-formatado{
+        font-size: 2em;
+    }
     .senha{
-        height: 80px;
+        height: 60px;
     }
     .numero-secreto{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .entrada-dado .botao{
         font-size: 0.8em;
-        width: 60%;
+        width: 150px;
     }
 }
