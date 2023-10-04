@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href='./src/css/reset.css'>
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
     <title>One Piece</title>
 </head>
 <body>
@@ -15,7 +19,7 @@
                     Tony Chopper
                 </h2>
                 <p class="descricao">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum possimus tempore odit itaque? Tempore, eos rem id perferendis consequatur, reiciendis ullam modi rerum voluptatem quae velit ipsam, facere quaerat dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo aliquid sequi consectetur nisi minus accusamus, est, tempora ducimus voluptas minima beatae enim? Dignissimos, culpa. Quia perspiciatis ratione recusandae nemo cum!
+                    Esta pequena rena ganhou a habilidadef de mudar sua forma e de pensar como humano após comer a fruta Hito Hito no Mi. Chopper é um valioso membro da tripulação dos Piratas do Chapéu de Palha, atuando como médico da tripulação.
                 </p>
             </div>
         </div>
@@ -28,12 +32,12 @@
                     Roronoa Zoro
                 </h2>
                 <p class="descricao">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum possimus tempore odit itaque? Tempore, eos rem id perferendis consequatur, reiciendis ullam modi rerum voluptatem quae velit ipsam, facere quaerat dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo aliquid sequi consectetur nisi minus accusamus, est, tempora ducimus voluptas minima beatae enim? Dignissimos, culpa. Quia perspiciatis ratione recusandae nemo cum!
+                    Primeiro pirata (segundo menbro se contarmos com Luffy) a se juntar à tripulação de Piratas do Chapéu de Palha, Zoro aceitou o convite de Luffy após o capitão salvar sua vida.
                 </p>
             </div>
         </div>
 
-        <div class="personagem">
+        <div class="personagem selecionado">
             <img class="imagem" src="./src/imagens/personagem-monkey-d-luffy.png" alt="Personagem Monkey D Luffy">
             <div class="conteudo">
                 <i class="logo"></i>
@@ -41,7 +45,7 @@
                     Monkey D Luffy
                 </h2>
                 <p class="descricao">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum possimus tempore odit itaque? Tempore, eos rem id perferendis consequatur, reiciendis ullam modi rerum voluptatem quae velit ipsam, facere quaerat dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo aliquid sequi consectetur nisi minus accusamus, est, tempora ducimus voluptas minima beatae enim? Dignissimos, culpa. Quia perspiciatis ratione recusandae nemo cum!
+                    Luffy do "Chapéu de Palha", como ficou conhecido, é o protagonista do anime, e o fundador e capitão da tripulação Piratas do Chapéu de Palha. Desde muito jovem, tem como seu maior sonho um dia encontrar o lendário tesouro de Gol D. Roger, para se tornar o novo Rei dos Piratas.
                 </p>
             </div>
         </div>
@@ -54,7 +58,7 @@
                     Nami
                 </h2>
                 <p class="descricao">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum possimus tempore odit itaque? Tempore, eos rem id perferendis consequatur, reiciendis ullam modi rerum voluptatem quae velit ipsam, facere quaerat dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo aliquid sequi consectetur nisi minus accusamus, est, tempora ducimus voluptas minima beatae enim? Dignissimos, culpa. Quia perspiciatis ratione recusandae nemo cum!
+                    Uma órfã de guerra, ainda criança Nami foi adotada por Bell-mére, uma mulher da Marinha. Enquanto crecia ao lado de sua irmã adotiva Nojiko, Nami já demonstrava sua paixão por desenhar mapas, sonhando em um dia fazer o mapa de todo o mundo.
                 </p>
             </div>
         </div>
@@ -67,7 +71,7 @@
                     Sanji
                 </h2>
                 <p class="descricao">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum possimus tempore odit itaque? Tempore, eos rem id perferendis consequatur, reiciendis ullam modi rerum voluptatem quae velit ipsam, facere quaerat dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo aliquid sequi consectetur nisi minus accusamus, est, tempora ducimus voluptas minima beatae enim? Dignissimos, culpa. Quia perspiciatis ratione recusandae nemo cum!
+                    Também conhecido como "Perna Negra" Sanji, estepirata foi o quinto a integrar a tripulação de Luffy. Sua ações como pirata lhe renderam a terceira maior recompensa entre os membros do Chapéu de Palha, além de atuar como cozinheiro oficial do grupo.
                 </p>
             </div>
         </div>
@@ -76,10 +80,32 @@
 
     <ul class="botoes">
         <li>
-            <button>
-                <img src="./src/imagens/tripulacao-chopper.png" alt="">
+            <button class="botao">
+                <img src="./src/imagens/tripulacao-chopper.png" alt="Tripulação Chopper">
+            </button>
+        </li>
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/tripulacao-zoro.png" alt="Tripulação Roronoa Zoro">
+            </button>
+        </li>
+        <li>
+            <button class="botao selecionado">
+                <img src="./src/imagens/tripulacao-luffy.png" alt="Tripulação Monkey D Luffy">
+            </button>
+        </li>
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/tripulacao-nami.png" alt="Tripulação Nami">
+            </button>
+        </li>
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/tripulacao-sanji.png" alt="Tripulação Sanji">
             </button>
         </li>
     </ul>
+
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
